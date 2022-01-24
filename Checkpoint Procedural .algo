@@ -1,0 +1,45 @@
+FUNCTION dotproduct (v1) :ARRAY_OF FLOAT,: v2 ARRAY_OF FLOAT);):FLOAT
+VAR
+   produit:FLOAT
+   i=FLOAT
+   p=0
+
+BEGIN
+    
+  FOR i FROM 0 TO v1.length-1 STEP 1 DO
+      p=p+v1[i]*v2[i]
+  END_FOR
+
+RETURN produit;
+
+
+END
+
+ALGORITHM calculat
+
+VAR
+    tabel1:ARRAY_OF FLOAT
+  
+   tabel2:ARRAY_OF FLOAT
+      c: FLOAT
+BEGIN
+ c= dotproduct( tabel1,tabel2)
+IF (c=0) THEN
+    write ("orthogonal")
+    else write ('not orthogonal')
+END_IF
+
+
+
+
+END
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,25 @@
+PROCEDURE dotproduct(v1 :  ARRAY_OF ,v2 : ARRAY _OF FLOAT  ,VAR ps : FLOAT )
+VAR
+    produit : FLOAT
+    I-INTEGER
+BEGIN
+   FOR i FROM 0 TO v1.length-1 STEP 1 DO
+    ps-ps + v1[i] *v2 [i]
+
+   END_FOR
+    ALGORITHM caluculate
+
+    VAR
+    table1: ARRAY_OF FLOAT
+        table2: ARRAY_OF FLOAT
+   y: FLOAT
+   s=0
+    BEGIN
+     dotproduct (table1, table, s)
+    IF ((s=0) ) THEN
+       write (corthogonal )
+       else write (not orthogonal )
+    END_IF
+    
+    
+    END
